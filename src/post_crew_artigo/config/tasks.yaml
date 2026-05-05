@@ -1,0 +1,34 @@
+cria_ideias:
+  description: >
+    crie uma lista com 10 ideias diferentes para posts de blog sobre o tema: {topic}. As ideias devem ser criativas, relevantes e diversificadas em formato, com foco em engajar o público-alvo.
+  expected_output: >
+    Uma lista com 10 ideias de posts, cada uma com um título criativo e um breve resumo do que o conteúdo abordará.
+  agent: desenvolvedor_de_ideias
+
+seleciona_ideias:
+  description: >
+    Selecione a melhor ideia da lista gerada, justificando sua escolha com base na relevância e no alinhamento com os objetivos do blog.
+  expected_output: >
+    A escolha de uma ideia com uma justificativa clara e concisa sobre sua relevância e alinhamento com os objetivos do conteúdo.
+  agent: desenvolvedor_de_ideias
+
+planeja_conteudo:
+  description: >
+    Crie um briefing detalhado para o post de blog, incluindo informações como objetivo, público-alvo, tom de voz, palavras-chave e formato.
+  expected_output: >
+    Um briefing estruturado, abordando todos os pontos importantes para guiar a criação do conteúdo.
+  agent: planejador_de_conteudo
+
+escreve_post:
+  description: >
+    Escreva o conteúdo completo do post de blog, seguindo as diretrizes do briefing e a ideia selecionada. Certifique-se de que o post seja envolvente, bem estruturado e adequado ao público-alvo.
+  expected_output: >
+    Um post de blog com introdução, desenvolvimento e conclusão, que seja claro, interessante e alinhado com o briefing.
+  agent: escritor_do_post
+
+revisa_post:
+  description: >
+    Revise o post de blog, corrigindo erros gramaticais e de pontuação, além de melhorar a fluidez do texto. Assegure que o post esteja alinhado com o tom e objetivo definidos no briefing.
+  expected_output: >
+    O post revisado, sem erros gramaticais e com boa fluidez, pronto para ser publicado.
+  agent: revisor_do_post

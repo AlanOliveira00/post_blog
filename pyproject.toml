@@ -1,0 +1,23 @@
+[project]
+name = "post_crew_artigo"
+version = "0.1.0"
+description = "post_crew_artigo using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.102.0,<1.0.0"
+]
+
+[project.scripts]
+post_crew_artigo = "post_crew_artigo.main:run"
+run_crew = "post_crew_artigo.main:run"
+train = "post_crew_artigo.main:train"
+replay = "post_crew_artigo.main:replay"
+test = "post_crew_artigo.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
