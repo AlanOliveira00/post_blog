@@ -12,7 +12,7 @@ class PostCrewArtigo():
     @llm
     def meu_modelo(self) -> LLM:
         return LLM(
-            model="anthropic/claude-sonnet-4-6",
+            model="groq/llama-3.3-70b-versatile", #anthropic/claude-sonnet-4-6
             temperature=0.7,
         )
 
@@ -90,5 +90,5 @@ class PostCrewArtigo():
             tasks=self.tasks,
             process=Process.sequential,
             verbose=True,
-            llm=self.meu_modelo()
+            #llm=self.meu_modelo()
         )
